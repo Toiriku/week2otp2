@@ -14,7 +14,7 @@ public class BMIApplication extends Application {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
     loader.setResources(ResourceBundle.getBundle("com.example.localdemoenkoin.bundle1"));
         Parent root = loader.load();
-        stage.setTitle("BMI Calculator - Internationalization Demo");
+        stage.setTitle("Riku Toivanen");
         stage.setScene(new Scene(root));
         stage.show();
     }
