@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.localdemoenkoin.BMIController"
+      spacing="10" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label fx:id="lblWeight" text="Weight (kg)" />
+    <TextField fx:id="txtWeight" promptText="Enter weight"/>
+
+    <Label fx:id="lblHeight" text="Height (cm)" />
+    <TextField fx:id="txtHeight" promptText="Enter height"/>
+
+    <Button fx:id="btnCalculate" text="Calculate BMI" onAction="#onCalculateClick" />
+
+    <Label fx:id="lblResult" text="" style="-fx-font-weight: bold;"/>
+
+    <VBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnEN" text="EN" onAction="#onENClick"/>
+        <Button fx:id="btnFR" text="FR" onAction="#onFRClick"/>
+        <Button fx:id="btnUR" text="UR" onAction="#onURClick"/>
+        <Button fx:id="btnVI" text="VI" onAction="#onVIClick"/>
+    </VBox>
+
+</VBox>
