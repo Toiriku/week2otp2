@@ -6,13 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.util.ResourceBundle;
 
 public class BMIApplication extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
-    loader.setResources(ResourceBundle.getBundle("com.example.localdemoenkoin.bundle1"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         Parent root = loader.load();
         stage.setTitle("Riku Toivanen");
         stage.setScene(new Scene(root));
@@ -20,6 +19,6 @@ public class BMIApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+        launch();
     }
 }

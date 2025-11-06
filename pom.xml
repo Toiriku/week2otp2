@@ -27,6 +27,11 @@
             <version>20.0.2</version>
             <classifier>win</classifier>
         </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -40,15 +45,19 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>com.example.localdemoenkoin.BMIApplication</mainClass>
+                    <modules>
+                        <module>javafx.controls</module>
+                        <module>javafx.fxml</module>
+                    </modules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
